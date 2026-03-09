@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF8EF"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2048 答题版"
+        android:textSize="32sp"
+        android:textColor="#776E65"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分数: 0"
+            android:textSize="18sp"
+            android:textColor="#776E65"
+            android:layout_marginEnd="24dp"/>
+
+        <TextView
+            android:id="@+id/highScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高: 0"
+            android:textSize="18sp"
+            android:textColor="#776E65"/>
+    </LinearLayout>
+
+    <com.game2048.view.GameView
+        android:id="@+id/gameView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/restartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新开始"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/quizBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="答题"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滑动控制 • 达到128分解锁答题"
+        android:textSize="12sp"
+        android:textColor="#BBADA0"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
